@@ -1,3 +1,5 @@
+![ASL Schema](https://user-images.githubusercontent.com/98431333/169384191-6f3c4b54-ba79-46ec-8786-1a62f0f116bf.png)
+
 # Project Template: React/Rails API
 
 ## Description
