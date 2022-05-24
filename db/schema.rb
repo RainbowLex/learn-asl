@@ -16,10 +16,12 @@ ActiveRecord::Schema.define(version: 2022_05_19_192755) do
   enable_extension "plpgsql"
 
   create_table "favorites", force: :cascade do |t|
-    t.inet "user_id"
-    t.inet "sign_id"
+    t.bigint "user_id", null: false
+    t.bigint "sign_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["sign_id"], name: "index_favorites_on_sign_id"
+    t.index ["user_id"], name: "index_favorites_on_user_id"
   end
 
   create_table "signs", force: :cascade do |t|
@@ -38,4 +40,6 @@ ActiveRecord::Schema.define(version: 2022_05_19_192755) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  add_foreign_key "favorites", "signs"
+  add_foreign_key "favorites", "users"
 end

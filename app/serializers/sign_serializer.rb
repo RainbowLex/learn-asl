@@ -1,3 +1,3 @@
 class SignSerializer < ActiveModel::Serializer
-  attributes :id, :word, :photo, :desc, :is_alpha
+  attributes :id, :word, :photo, :description, :is_alpha
 end
