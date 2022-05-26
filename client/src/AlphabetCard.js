@@ -1,7 +1,7 @@
 import React from 'react'
 import './SignCard.css'
 
-function SignCard({sign}){
+function AlphabetCard({sign}){
     
     const newSigns = sign.filter(sign => sign.is_alpha === true)
     console.log(newSigns)
@@ -21,4 +21,4 @@ function SignCard({sign}){
 
 
 
-export default SignCard;
+export default AlphabetCard;

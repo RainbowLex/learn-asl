@@ -1,0 +1,94 @@
+* {
+    /* font-family: monospace; */
+}
+
+#Header {
+    display: flex;
+    flex-flow: row wrap;
+    /* color: darkcyan; */
+    background-color: rgb(255, 255, 255);
+    /* border-radius: 30px; */
+    /* opacity: .70; */
+    /* height: 200px; */
+}
+
+.navBar {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    margin-top: 20px;
+}
+
+.navLink {
+    /* margin-top: 10px; */
+    margin-left: 100px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#Header p {
+    font-size: 1.5em;
+    padding-right: 40px;
+}
+
+.logo {
+    width: 18em;
+    height: 18em;
+    cursor: pointer;
+}
+
+.wrapper1 {
+    width: 100px;
+    margin: 0 auto;
+}
+
+.menu-button {
+    background-color: transparent;
+    color: black;
+    /* padding: 16px; */
+    cursor: pointer;
+    border: 1px solid #fff;
+    font-size: 2em;
+    font-weight: bold;
+    /* margin-top: 90px; */
+}
+
+.right-menu {
+    position: relative;
+    display: inline-block;
+    /* float: right; */
+}
+
+.drop-down {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    min-height: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 999 important!;
+}
+
+.drop-down a {
+    color: black;
+    text-decoration: none;
+    display:block;
+    margin: auto;
+    padding: 12px;
+    font-size: 20px;
+}
+
+.drop-down a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.right-menu:hover .drop-down{
+    display: block;
+}
+
+.right-menu:hover .menu-button {
+    background-color: transparent;
+}

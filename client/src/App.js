@@ -1,20 +1,22 @@
 import React from 'react';
 import Home from './Home';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Alphabet from './Alphabet';
+import BasicWords from './BasicWords';
+import Sentences from './Sentences';
+import {Routes, Route } from 'react-router-dom';
 import './App.css';
 
 
 function App() {
 
-  return(
-    <div>
-      <Router>
-      <Routes>
-      <Route path= "/"  element = {<Home/>} />
-      <Route path= "/home"  element = {<Home/>} />
-            </Routes>
-      </Router>
-    </div>
+  return(     
+        <Routes>
+          <Route path= "/"  element = {<Home/>} />
+          <Route path= "/home"  element = {<Home/>} />
+          <Route path= "/alphabet" element = {<Alphabet/>} />
+          <Route path= "/basicWords" element = {<BasicWords/>} />
+          <Route path= "/sentences" element = {<Sentences/>} />
+        </Routes>
   );
 }
 

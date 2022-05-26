@@ -1,10 +1,10 @@
 import React, {useEffect ,useState} from 'react';
 import Header from './Header';
 // import Footer from './Footer';
-import SignCard from './SignCard'
+import SentencesCard from './SentencesCard'
 // import './Home.css';
 
-function Home(){
+function Sentences(){
     const [sign, setSign] = useState([])
   
 
@@ -19,10 +19,10 @@ function Home(){
     return(
         <div id="home" >
             <Header id='header'/>
-            <SignCard sign={sign} setSign ={setSign}/>
+            <SentencesCard sign={sign} setSign ={setSign}/>
             {/* <Footer id='footer'/> */}
         </div> 
     )
 }
 
-export default Home;
+export default Sentences;

@@ -3,7 +3,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 1fr;
     text-align: center;
-    margin-left: 190px;
+    margin-left: 130px;
     /* margin-right: 100px; */
 }
 .cards{
@@ -13,25 +13,24 @@
     justify-content: center;
     margin: 10px;
 }
-.image{
+.img{
     margin-top: 100px;
     border: 2px solid rgb(83, 78, 78);
     border-radius: 4px;
     width: 300px;
     height: 300px;
     padding: 25px;
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxy_nN61taFENMrRY3aQ-MaP4rCfkBNWz1hQ&usqp=CAU)
 }
 
-.name{
+#inCard{
     display:center;
     margin: 0 auto;
-    border: 4px solid #ddd;
+    border: 4px solid rgb(145, 216, 183);
     border-radius: 4px;
-    width: 100px;
-    height: 50px;
+    width: 300px;
+    height: 300px;
     padding: 25px;
-    background-color: rgb(153, 142, 166);
+    background-color: rgb(151, 192, 175);
 }
 
 .cart{
