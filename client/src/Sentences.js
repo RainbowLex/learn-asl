@@ -1,6 +1,6 @@
 import React, {useEffect ,useState} from 'react';
 import Header from './Header';
-// import Footer from './Footer';
+import Footer from './Footer';
 import SentencesCard from './SentencesCard'
 // import './Home.css';
 
@@ -20,7 +20,7 @@ function Sentences(){
         <div id="home" >
             <Header id='header'/>
             <SentencesCard sign={sign} setSign ={setSign}/>
-            {/* <Footer id='footer'/> */}
+            <Footer id='footer'/>
         </div> 
     )
 }

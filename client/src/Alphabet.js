@@ -1,6 +1,6 @@
 import React, {useEffect ,useState} from 'react';
 import Header from './Header';
-// import Footer from './Footer';
+import Footer from './Footer';
 import AlphabetCard from './AlphabetCard'
 // import './Home.css';
 
@@ -20,7 +20,7 @@ function Alphabet(){
         <div id="home" >
             <Header id='header'/>
             <AlphabetCard sign={sign} setSign ={setSign}/>
-            {/* <Footer id='footer'/> */}
+            <Footer id='footer'/>
         </div> 
     )
 }

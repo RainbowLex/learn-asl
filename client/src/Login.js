@@ -22,9 +22,9 @@ function Login({ onLogin, setUser }) {
           <Divider />
           <p>
             Don't have an account? &nbsp;
-            <Button color="secondary" onClick={() => setShowLogin(false)}>
+            <ButtonFave color="secondary" onClick={() => setShowLogin(false)}>
               Sign Up
-            </Button>
+            </ButtonFave>
           </p>
         </>
       ) : (
@@ -33,21 +33,31 @@ function Login({ onLogin, setUser }) {
           <Divider />
           <p>
             Already have an account? &nbsp;
-            <Button color="secondary" onClick={() => setShowLogin(true)}>
+            <ButtonFave color="secondary" onClick={() => setShowLogin(true)}>
               Log In
-            </Button>
+            </ButtonFave>
           </p>
         </>
       )}
       <Divider />
-          <p>
-            <Button color="secondary" onClick={takeToAll}>
-              Continue Without Logging In
-            </Button>
-          </p>
     </Wrapper>
   );
 }
+
+const ButtonFave = styled.button`
+background-color: transparent;
+color: white;
+background-color: red;
+padding: 8px 16px;
+cursor: pointer;
+font-size: 15px;
+border-radius: 6px;
+border: 1px solid red;
+
+&:hover {
+    background-color: rgba(245, 39, 39, 1);
+  }
+`;
 
 const Logo = styled.h1`
   font-family: "Permanent Marker", cursive;

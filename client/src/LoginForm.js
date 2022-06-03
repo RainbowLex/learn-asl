@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Button, Error, Input, FormField, Label } from "./styles";
+import styled from "styled-components";
 
 function LoginForm({ onLogin }) {
   const [username, setUsername] = useState("");
@@ -49,9 +50,9 @@ function LoginForm({ onLogin }) {
         />
       </FormField>
       <FormField>
-        <Button variant="fill" color="primary" type="submit">
+        <ButtonFave variant="fill" color="primary" type="submit">
           {isLoading ? "Loading..." : "Login"}
-        </Button>
+        </ButtonFave>
       </FormField>
       <FormField>
         {errors.map((err) => (
@@ -61,5 +62,19 @@ function LoginForm({ onLogin }) {
     </form>
   );
 }
+
+const ButtonFave = styled.button`
+background-color: transparent;
+color: white;
+background-color: black;
+padding: 8px 16px;
+cursor: pointer;
+font-size: 15px;
+border-radius: 6px;
+
+&:hover {
+  background-color: rgba(31, 31, 31, 1);
+  }
+`;
 
 export default LoginForm;
