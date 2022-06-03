@@ -6,13 +6,16 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 puts "Seeding user"
-user1 = User.create(username: "alexlex", password: "chicken")
-user2 = User.create(username: "yesac", password: "brown")
-user3 = User.create(username: "spongebob", password: "squarepants")
-user4 = User.create(username: "patrick", password: "star")
-user5 = User.create(username: "urmom", password: "urmom")
+user1 = User.create(username: "alexlex", password_digest: "chicken")
+user2 = User.create(username: "yesac", password_digest: "brown")
+user3 = User.create(username: "spongebob", password_digest: "squarepants")
+user4 = User.create(username: "patrick", password_digest: "star")
+user5 = User.create(username: "urmom", password_digest: "urmom")
 
 puts "Seeding sign"
+
+
+#start of alphabet
 sign1 = Sign.create(word: "A", photo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Sign_language_A.svg/1280px-Sign_language_A.svg.png", description: 'A closed fist, all finger folded against the palm, thumb is straight, alongside the index finger.', is_alpha: true, basic_word: false, sentence: false)
 sign2 = Sign.create(word: "B", photo: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Sign_language_B.svg/800px-Sign_language_B.svg.png", description: 'All fingers are straight. Thumb is folded across palm.', is_alpha: true, basic_word: false, sentence: false)
 sign3 = Sign.create(word: "C", photo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Sign_language_C.svg/1920px-Sign_language_C.svg.png", description: ' All fingers partially folded. Thumb is partially folded. Hand is turn slightly to the left so viewer can see backward "C" shape formed by thumb and index finger.', is_alpha: true, basic_word: false, sentence: false)
@@ -53,6 +56,19 @@ sign34 = Sign.create(word: "Food", photo: "https://media4.giphy.com/media/26DOtL
 sign35 = Sign.create(word: "Mother", photo: "https://media4.giphy.com/media/3o7TKOMlsNLawB8B9K/200w.webp?cid=ecf05e47eeb1w9muqzcnzjem5bymwqfig40z3apqlfrhb5in&rid=200w.webp&ct=g", description: 'The sign for "mom" or "mother" is made by touching the tip of the thumb of your dominant "open"-hand (also called a "5"-hand) to your chin.', is_alpha: false, basic_word: true, sentence: false)
 sign36 = Sign.create(word: "Father", photo: "https://media1.giphy.com/media/l0HlNzPBWFE3c2Hao/200w.webp?cid=ecf05e47irwxy6lreaze0srohg0z7rtjbbm6r6w2yt78m38j&rid=200w.webp&ct=g", description: 'A good general way to sign "dad" or "father" is by placing the tip of the thumb of your "5-hand" on or near your forehead.', is_alpha: false, basic_word: true, sentence: false)
 sign37 = Sign.create(word: "Water", photo: "https://media0.giphy.com/media/26DOtNnaZuvgS5wTS/200w.webp?cid=ecf05e474xs83fpyncrpygj51fowa0k22nnp5c554c45ky5q&rid=200w.webp&ct=g", description: 'The sign for "water" is made by forming your right hand into the letter "W."  Touch the index finger to your mouth twice.', is_alpha: false, basic_word: true, sentence: false)
+
+
+#start of sentences
+sign38 = Sign.create(word: "How are you?", photo: "https://media1.giphy.com/media/3o7TKDw5NA17fKJVWU/200w.webp?cid=ecf05e475iks54w8twplrtojl3mpxcu0uvz84gakkpwm80am&rid=200w.webp&ct=g", description: 'First, sign how. Put your fingers together, thumbs up, and then roll them forward. How. Then point: you.', is_alpha: false, basic_word: false, sentence: true)
+sign39 = Sign.create(word: "What's wrong?", photo: "https://media1.giphy.com/media/26FLexfKeBtKiMTTO/200w.webp?cid=ecf05e47x49wlo66qys37v797hxdkfano6whaw7in9zrtqp3&rid=200w.webp&ct=g", description: 'First, with your dominant hand, point the palm up and shake it side to side rapidly. What. Then with that same hand make a y by closing your fist and keeping your thumb and pinky sticking out. Place this on your chin and tap it 2 times.', is_alpha: false, basic_word: false, sentence: true)
+sign40 = Sign.create(word: "Where's the bathroom?", photo: "https://media3.giphy.com/media/l0MYKTHdq5SE9KV44/200w.webp?cid=ecf05e47hlz003vmzoxi36gdtnbw774ydhyxpt4wnpy8sq3k&rid=200w.webp&ct=g", description: 'First, with your dominant hand make a fist and put your thumb under your index finger, shake it side to side to make bathroom. Next, point up with your index finger and make the same shaking motion to sign where.', is_alpha: false, basic_word: false, sentence: true)
+sign41 = Sign.create(word: "I don't know", photo: "https://media2.giphy.com/media/3oz8xwkWxsh3gQd4EE/200w.webp?cid=ecf05e47i6vqxol1f1isdr0qbbrk9jorumja22h9aji3f2ph&rid=200w.webp&ct=g", description: 'With your dominant hand completely flat, have the tips of your fingers touch your eyebrow, then swing your wrist outward.', is_alpha: false, basic_word: false, sentence: true)
+sign42 = Sign.create(word: "Please help me", photo: "https://media3.giphy.com/media/3oz8xxZjw8HJxLcmD6/200w.webp?cid=ecf05e47fqactddjobg8kvpi4gdo816qwik6uyfe95k5vpar&rid=200w.webp&ct=g", description: 'First place your dominant hand flat over the center of your chest, moving it in a clockwise motion to make please. Then, sign please by extending your left hand with your palm facing up, while pulling it into your chest lay your right hand on top of your left and bringing them together. Your right hand should be making a thumbs up figure.', is_alpha: false, basic_word: false, sentence: true)
+sign43 = Sign.create(word: "Good morning", photo: "https://media3.giphy.com/media/bca845IE1doIXVJCcw/200w.webp?cid=ecf05e47cur1a3p98duvcv52rlyk6376acodonxn47bsd8qq&rid=200w.webp&ct=g", description: 'With your dominant hand flat, you will touch your chin with the tips of your finger then pull outward, placing your left hand in your inner elbow and pulling your right hand back towards you.', is_alpha: false, basic_word: false, sentence: true)
+sign44 = Sign.create(word: "I remember", photo: "https://media4.giphy.com/media/4OOJDHaA82HYy6gQa2/200w.webp?cid=ecf05e47cur1a3p98duvcv52rlyk6376acodonxn47bsd8qq&rid=200w.webp&ct=g", description: 'With your dominant hand close your fist and stick your thumb out, touch your thumbs nail to your forehead and bring it down to connect with your other hand, which is also making the same shape as your dominant hand.', is_alpha: false, basic_word: false, sentence: true)
+sign45 = Sign.create(word: "You got this", photo: "https://media4.giphy.com/media/KXPG2gvqqxWHymSwFO/200w.webp?cid=ecf05e47cur1a3p98duvcv52rlyk6376acodonxn47bsd8qq&rid=200w.webp&ct=g", description: 'First, point at your desired audience with your dominant hand. Then, close your hand into and fist and hit it down onto your other hand, which is also a fist. Finally, point down with your dominant hand.', is_alpha: false, basic_word: false, sentence: true)
+sign46 = Sign.create(word: "Love you", photo: "https://media0.giphy.com/media/R5cxgBSnaDBAI0XSf6/200w.webp?cid=ecf05e47xecy9hfhy1da8nozydnkb2sp3ydgfoiszv0f5iq2&rid=200w.webp&ct=g", description: 'Point your hand towards your desired audience and close your middle and ring finger, so that only your thumb, index and pinky fingers are sticking up.', is_alpha: false, basic_word: false, sentence: true)
+sign47 = Sign.create(word: "Miss you", photo: "https://media1.giphy.com/media/TeobXWbKmwTxzMw6ic/200w.webp?cid=ecf05e47s39d4zf1g010g7yro1d30weknq4j7tdrart2zxbh&rid=200w.webp&ct=g", description: 'First, touch your chin with your index finger using your dominant hand. Then, point at who you want to sign this to.', is_alpha: false, basic_word: false, sentence: true)
 
 
 puts "Seeding favorite"

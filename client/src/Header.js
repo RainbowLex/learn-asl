@@ -1,16 +1,16 @@
 import React from 'react';
 import './Header.css'; 
 import logo from "../src/logo/aslLogo.png"
+import { Button } from "./styles";
 
 function Header({setPage, page}){
     function takeToAll(){
-        window.location.replace("/Home")
+        window.location.replace("/AllSigns")
     }
     return(
         <div id="Header">
-            <a href= "/Home"><img className='logo' src={logo} alt="Logo"></img></a>
-            <nav className="navBar">
-                <a className ='navLink' href="./Home" >Home</a>
+            <a href= "/AllSigns"><img className='logo' src={logo} alt="Logo"></img></a>
+            {/* <nav className="navBar">
 
             <div className="wrapper1">
                 <div className="right-menu">
@@ -22,9 +22,7 @@ function Header({setPage, page}){
                         </div>
                 </div> 
             </div>
-                <a className ='navLink' href="./Account">User</a>
-            </nav>
-            {/* <img className="headerImage" src={logo} alt="Logo" onClick={takeHome}></img>                                                     */}
+        </nav> */}
 </div>
 
 )
