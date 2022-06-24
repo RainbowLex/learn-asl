@@ -1,6 +1,7 @@
 import React from 'react'
 import './SignCard.css'
 import { Button } from "./styles";
+import styled from "styled-components";
 
 function SentencesCard({sign, user}){
 
@@ -42,7 +43,7 @@ function SentencesCard({sign, user}){
                                 <div className="back">
                                     <div id="inCard">
                                         {sign.sentence === true ? <p className="desc">{sign.description}</p>: null}
-                                        <Button>Add To Favorites</Button>
+                                        <ButtonFave>Add To Favorites</ButtonFave>
                                         <p className="click">Click to View Example</p>
                                     </div>
                                 </div>
@@ -55,6 +56,18 @@ function SentencesCard({sign, user}){
     )
 }
 
+const ButtonFave = styled.button`
+background-color: transparent;
+color: white;
+background-color: black;
+padding: 8px 16px;
+cursor: pointer;
+font-size: 20px;
+border-radius: 6px;
 
+&:hover {
+    background-color: rgba(31, 31, 31, 1);
+  }
+`;
 
 export default SentencesCard;
